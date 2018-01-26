@@ -16,10 +16,7 @@ var info = [
 ]
 
 
-
-
-$(document).ready(function () {
-
+$(document).ready(function (){
     if (localStorage.getItem("votosPelis") === null) {
 
     }
@@ -45,16 +42,13 @@ $(document).ready(function () {
     $('#botonDonut').click(graficaDonut)
 
     $('#atrasResultado').click(irAtras)
-    $('#atrasResultado').keypress(function(e) {
-        if(e.which == 13) {//enter
+    $('#atrasResultado').keypress(function (e) {
+        if (e.which == 13) {//enter
             irAtras()
         }
     })
-
     graficaPastel()
-
     crearAriaLabels()
-    
 })
 
 
@@ -77,24 +71,24 @@ function drawChart() {
     // Set chart options
     var options = {
         'title': 'Reparto de votos MovieRate',
-        'width': $('.divGrafica').width()-10,
-        'height': $('.divGrafica').height()-30,
+        'width': $('.divGrafica').width() - 10,
+        'height': $('.divGrafica').height() - 30,
         backgroundColor: '#f1f1f1',
         is3D: true,
-        vAxis : { textPosition : 'in' },
+        vAxis: { textPosition: 'in' },
         chartArea: {
             left: 0,
-            width: $('.divGrafica').width()-10
+            width: $('.divGrafica').width() - 10
         },
         legend: {
             maxLines: 1,
             textStyle: {
-              fontSize: 15
+                fontSize: 15
             }
-          },
-          titleTextStyle: {
+        },
+        titleTextStyle: {
             fontSize: 20
-          }
+        }
     }
 
     $('#pastel').show()
@@ -110,24 +104,24 @@ function drawChart() {
 
     var optionsDonut = {
         'title': 'Reparto de votos MovieRate',
-        'width': $('.divGrafica').width()-10,
-        'height': $('.divGrafica').height()-30,
+        'width': $('.divGrafica').width() - 10,
+        'height': $('.divGrafica').height() - 30,
         backgroundColor: '#f1f1f1',
         is3D: false,
         pieHole: 0.3,
         chartArea: {
             left: 0,
-            width: $('.divGrafica').width()-10
+            width: $('.divGrafica').width() - 10
         },
         legend: {
             maxLines: 1,
             textStyle: {
-              fontSize: 15
+                fontSize: 15
             }
-          },
-          titleTextStyle: {
+        },
+        titleTextStyle: {
             fontSize: 20
-          }
+        }
     }
 
     var chart = new google.visualization.PieChart(document.getElementById('donut'));
@@ -150,7 +144,6 @@ function graficaPastel() {
     $('#pastel').show()
     $('#columna').hide()
     $('#donut').hide()
-
 }
 
 
@@ -162,7 +155,6 @@ function graficaColumna() {
     $('#pastel').hide()
     $('#columna').show()
     $('#donut').hide()
-
 }
 
 
@@ -174,26 +166,22 @@ function graficaDonut() {
     $('#pastel').hide()
     $('#columna').hide()
     $('#donut').show()
-
 }
 
-function irAtras(){
-    window.location.href='index.html'
+function irAtras() {
+    window.location.href = 'index.html'
 }
 
-function crearAriaLabels(){
+function crearAriaLabels() {
     var aria = ''
-
     for (let i = 0; i < info.length; i++) {
-        if (info[i][1] > 0){
+        if (info[i][1] > 0) {
             if (info[i][1] == 1)
-                aria += info[i][0] + ' tiene ' + info[i][1] + ' voto de ' + totalVotos +'. '
+                aria += info[i][0] + ' tiene ' + info[i][1] + ' voto de ' + totalVotos + '. '
             else
-                aria += info[i][0] + ' tiene ' + info[i][1] + ' votos de ' + totalVotos +'. '
+                aria += info[i][0] + ' tiene ' + info[i][1] + ' votos de ' + totalVotos + '. '
         }
-        
     }
-
     $('#pastel').attr('aria-label', aria)
     $('#columna').attr('aria-label', aria)
     $('#donut').attr('aria-label', aria)

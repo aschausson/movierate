@@ -29,38 +29,36 @@
     <div id="bloqueo"></div>
 
     <div id="peliculaGrande" tabindex="0">
+        
         <img id="pgImagen" src="" alt="">
         <h1 id="pgTitulo">_</h1>
-        <h3 id="pgGenero">_</h3>
-        <h3 id="pgDirector">_</h3>
-        <h3 id="pgReparto">_</h3>
-        <h3>Sinopsis:</h3>
+        <h2 id="pgGenero">_</h2>
+        <h2 id="pgDirector">_</h2>
+        <h2 id="pgReparto">_</h2>
+        <h2>Sinopsis:</h2>
         <p id="pgSinopsis"></p>
+
         <hr/>
+
         <form onsubmit="return guardarVoto()" action="resultado.html" name="formulario" tabindex="0" aria-label="Formulario para introducir los datos del votante.">
             <div class="lineaFormulario">
                 <label for="nombreUsuario">Nombre</label>
-                <input type="text" name="" id="nombreUsuario" required>
+                <input type="text" name="" id="nombreUsuario" placeholder="Nombre Usuario" required>
             </div>
-
             <div class="lineaFormulario">
                 <label for="emailUsuario">Email</label>
-                <input type="email" name="" id="emailUsuario" required>
+                <input type="email" name="" id="emailUsuario" placeholder="ejemplo@dominio.com" required>
             </div>
-
             <div class="lineaFormulario">
                 <label for="telefonoUsuario">Telefono</label>
-                <input type="tel" name="" id="telefonoUsuario" required>
+                <input type="tel" name="" id="telefonoUsuario" placeholder="123-4567-8901" required>
             </div>
-
-
             <button id="botonVotar" type="submit" aria-label="Botón para mandar el voto e ir a la página de resultados">VOTAR</button>
         </form>
 
         <img class="botonAtras" src="data/img/back.png" alt="" id="pgAtras" tabindex="0" aria-label="Botón para volver a la zona de selección de películas, pulse enter o escape.">
 
     </div>
-
     <script src="js/peliculas.js"></script>
 </body>
 

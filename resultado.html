@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="css/peliculas.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1  tabindex="0" id="tituloResultado" aria-level=1>Resultado de Votaciones</h1>
-    <div  tabindex="0" id="divBotones" aria-level=2 aria-label="Botones para seleccionar el tipo de gráfica de representación. Presione enter para seleccionar.">
-            <button class="botonesActivo" id="botonTarta">TARTA</button>
-            <button class="botonesInactivo" id="botonColumna">COLUMNA</button>
-            <button class="botonesInactivo" id="botonDonut">DONUT</button>
+    <h1 tabindex="0" id="tituloResultado" aria-level=1>Resultado de Votaciones</h1>
+    <div tabindex="0" id="divBotones" aria-level=2 aria-label="Botones para seleccionar el tipo de gráfica de representación. Presione enter para seleccionar.">
+        <button class="botonesActivo" id="botonTarta">TARTA</button>
+        <button class="botonesInactivo" id="botonColumna">COLUMNA</button>
+        <button class="botonesInactivo" id="botonDonut">DONUT</button>
     </div>
 
-    <div  tabindex="0" class="divGrafica" id="pastel"></div>
-    <div  tabindex="0" class="divGrafica" id="columna"></div>
-    <div  tabindex="0" class="divGrafica" id="donut"></div>
+    <div tabindex="0" class="divGrafica" id="pastel"></div>
+    <div tabindex="0" class="divGrafica" id="columna"></div>
+    <div tabindex="0" class="divGrafica" id="donut"></div>
 
     <img class="botonAtras" src="data/img/back.png" alt="" id="atrasResultado" tabindex="0" aria-label="Volver a la página de selección de película.">
 
     <script src="js/resultados.js"></script>
 </body>
+
 </html>

@@ -4,7 +4,6 @@ body{
     font-size: 100%;
 }
 
-
 #cabecera{
     height: 100px;
     width: 435px;
@@ -22,9 +21,8 @@ body{
     display: block;
     height: 20px;
     position: absolute;
-  float: left;
-  top: 90px;
-
+    float: left;
+    top: 90px;
 }
 
 #contenedor{
@@ -34,26 +32,25 @@ body{
     justify-content: center;
     border: 2px solid black;
     margin: 3px;
-
 }
 
 .peliPequeCont{
     background-color: lightgray;
     width: 500px;
     height: 234px;
-margin-left: 10px;
-margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     border: 1px solid black;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  box-shadow: 10px 10px 10px #484848;
-  overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-shadow: 10px 10px 10px #484848;
+    overflow: hidden;
+    font-size: 90%;
+    cursor: pointer;
 
-  transition: background-color 0.5s ease-in;
-  transition: text-shadow 0.5s;
-  transition: box-shadow 0.5s;
-  font-size: 90%;
-  cursor: pointer;
+    transition: background-color 0.5s ease-in;
+    transition: text-shadow 0.5s;
+    transition: box-shadow 0.5s;
 }
 
 .peliPequeCont img{
@@ -61,8 +58,7 @@ margin-right: 10px;
     margin: 5px;
 }
 
-
-.peliPequeCont h1, .peliPequeCont h4, .peliPequeCont p{
+.peliPequeCont h1, .peliPequeCont h2, .peliPequeCont p{
     margin: 0px;
     margin-top: 5px;
 }
@@ -70,16 +66,14 @@ margin-right: 10px;
 .peliPequeCont h1{
     margin-bottom: 7px;
     text-shadow: 2px 2px 4px grey;
-    
 }
 
-h4{
+h2{
     font-size: 1.2em;
 }
 
 p{
     font-size: 1.2em;
-
 }
 
 .peliPequeCont:hover, .peliPequeCont:focus {
@@ -118,9 +112,6 @@ p{
     padding: 10px;
     margin: 0 auto;
     box-shadow: 10px 10px 10px #484848;
-  /*  position: fixed;
-    top: 0;
-bottom: 0;*/
     left: 0;
     right: 0;
     display:block;
@@ -128,11 +119,9 @@ bottom: 0;*/
     margin: auto;
     z-index: 15;
     font-size: 90%;
- /*   height: 90%;
-*/
     position: fixed;
-top: 50%;
-transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #cierraAyuda{
@@ -145,13 +134,10 @@ transform: translateY(-50%);
     min-height:100%;
     background-color: #383838;
     opacity: 0.8;
-
+    top:0px;
+    left:0px;
+    z-index:10;
     position:fixed;
-
-  top:0px;
-  left:0px;
-  z-index:10;
-
 }
 
 #pgImagen{
@@ -163,7 +149,6 @@ transform: translateY(-50%);
 .botonAtras{
     width: 40px;
     margin: 5px;
-
     bottom: 0px;
     left: 0px;
     cursor: pointer;
@@ -200,7 +185,7 @@ form{
     box-shadow: 10px 10px 10px #484848;
     position: fixed;
     top: 0;
-bottom: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     display:block;
@@ -210,7 +195,6 @@ bottom: 0;
     font-size: 90%;
     height: 86%;
     margin-top: 100px;
-    
 }
 
 #divBotones{
@@ -221,28 +205,23 @@ bottom: 0;
 
 #divBotones button{
     position:relative;
-
     width: 90px;
     height: 35px;
-    
     border-left: 2px solid black;
     border-top: 2px solid black;
     border-right: 2px solid black;
-
 }
 
 #atrasResultado{
     position: fixed;
     width: 40px;
     margin: 5px;
-
     bottom: 40px;
     left: 50%;
     margin-left: -300px;
     cursor: pointer;
     z-index: 30;
 }
-
 
 .botonesActivo{
     background-color: #f1f1f1;
@@ -265,75 +244,74 @@ bottom: 0;
 
 @media (max-width: 950px) {
     .peliPequeCont {
-      font-size: 80%;
+        font-size: 80%;
     }
+
     #cabecera{
         height: 70px;
         width: 315px;
     }
+
     #titulo{
         height: 70px;
     }
+
     #ayuda{
         top: 60px;
     }
+
 	#peliculaGrande{
-	width: 320px;
-max-height: 500px;
-    border: 2px solid black;
-    background-color: lightgray;
-    padding: 10px;
-    margin: 0 auto;
-    box-shadow: 10px 10px 10px #484848;
-    position: fixed;
-  /*  top: 0;
-  bottom: 0;*/
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 15;
-    font-size: 80%;
-
+        width: 320px;
+        max-height: 500px;
+        border: 2px solid black;
+        background-color: lightgray;
+        padding: 10px;
+        margin: 0 auto;
+        box-shadow: 10px 10px 10px #484848;
         position: fixed;
-top: 50%;
-transform: translateY(-50%);
-}
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 15;
+        font-size: 80%;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
-.divGrafica{
-	width: 320px;
+    .divGrafica{
+        width: 320px;
+        border: 2px solid black;
+        background-color: f1f1f1;
+        padding: 10px;
+        margin: 0 auto;
+        box-shadow: 10px 10px 10px #484848;
+        position: absolute;
+        top: 0;
+        height: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 15;
+        font-size: 80%;
+        margin-top: 94px;
+    }
 
-    border: 2px solid black;
-    background-color: f1f1f1;
-    padding: 10px;
-    margin: 0 auto;
-    box-shadow: 10px 10px 10px #484848;
-    position: absolute;
-    top: 0;
-    height: 80%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 15;
-    font-size: 80%;
-    margin-top: 94px;
-}
+    #pgImagen{
+        width: 95%;
+    }
 
-#pgImagen{
-    width: 95%;
-}
+    #atrasResultado{
+        position: fixed;
+        width: 40px;
+        margin: 5px;
+        bottom: 40px;
+        left: 10px;
+        cursor: pointer;
+        z-index: 30;
+    }
 
-#atrasResultado{
-    position: fixed;
-    width: 40px;
-    margin: 5px;
-
-    bottom: 40px;
-    left: 10px;
-    cursor: pointer;
-    z-index: 30;
-}
-
-#divBotones button{
-height: 30px;
-  }
+    #divBotones button{
+        height: 30px;
+    }
 }
